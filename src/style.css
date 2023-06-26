@@ -1,1 +1,29 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  background: white;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+.headercard {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  justify-content: flex-start;
+}
+.bodycard {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: flex-end;
+}
+.footercard {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+}
