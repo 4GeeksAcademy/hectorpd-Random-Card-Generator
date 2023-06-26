@@ -21,7 +21,12 @@ let cardsGenerator = (suit, number) => {
   cardBody.innerHTML = cardnumber;
   let cardFooter = document.getElementById("cardfooter");
   cardFooter.innerHTML = cardsuit;
-  //cardHeader.classList.add("red");
+
+  //headerCard.classList.add("red");
+
+  document.querySelector("#btn").addEventListener("click", () => {
+    cardsGenerator(palo, numero);
+  });
 };
 
 let palo = ["♣", "♦", "♥", "♠"];
