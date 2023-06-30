@@ -35,9 +35,11 @@ let cardsGenerator = (suit, number) => {
   if (cardsuit === "♦" || cardsuit === "♥") {
     cardHeader.classList.add("text-danger");
     cardFooter.classList.add("text-danger");
+    cardBody.classList.add("text-danger");
   } else {
     cardHeader.classList.remove("text-danger");
     cardFooter.classList.remove("text-danger");
+    cardBody.classList.remove("text-danger");
   }
 
   // Temporizador
