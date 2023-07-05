@@ -46,10 +46,12 @@ let cardsGenerator = (suit, number) => {
   setTimeout(() => {
     document.querySelector("#btn").disabled = false;
     cardsGenerator(suit, number);
-  }, 5000);
+  }, 10000);
 
   //llamado del boton
   document.querySelector("#btn").addEventListener("click", () => {
+    clearTimeout(setTimeout);
+    document.querySelector("#btn").disabled = true;
     cardsGenerator(palo, numero);
   });
 };
